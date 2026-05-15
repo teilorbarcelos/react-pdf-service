@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet, Font } from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
 // Register a nice font if possible, but for now we use defaults
 // Standard fonts: Helvetica, Times-Roman, Courier, Symbol, ZapfDingbats

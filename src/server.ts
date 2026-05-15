@@ -29,9 +29,10 @@ app.post('/v1/pdf/generate', async (req, res) => {
       console.log('PDF generated successfully');
     });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error);
     console.error('Error generating PDF:', error);
-    res.status(500).send(`Error generating PDF: ${error.message}`);
+    res.status(500).send(`Error generating PDF: ${message}`);
   }
 });
 

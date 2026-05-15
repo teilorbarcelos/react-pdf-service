@@ -1,6 +1,6 @@
 export interface PDFRequest {
   template: string;
-  data: Record<string, any>;
+  data: Record<string, unknown>;
   options?: {
     landscape?: boolean;
     format?: string;
@@ -8,5 +8,5 @@ export interface PDFRequest {
 }
 
 export interface TemplateProps {
-  data: Record<string, any>;
+  data: Record<string, unknown>;
 }
