@@ -1,0 +1,28 @@
+{
+  "scripts": [
+    {
+      "name": "Install Dependencies",
+      "command": "make install"
+    },
+    {
+      "name": "Start Development Server",
+      "command": "make dev"
+    },
+    {
+      "name": "Start Docker (Static)",
+      "command": "make infra-up"
+    },
+    {
+      "name": "Stop Docker",
+      "command": "make infra-down"
+    },
+    {
+      "name": "Clean All",
+      "command": "make infra-clean"
+    },
+    {
+      "name": "Run Integration Test",
+      "command": "make test"
+    }
+  ]
+}

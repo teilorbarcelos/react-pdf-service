@@ -1,0 +1,44 @@
+{
+  "name": "react-pdf-service",
+  "version": "1.0.0",
+  "description": "PDF generation service using react-pdf",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'node --loader ts-node/esm' src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint 'src/**/*.ts' 'src/**/*.tsx'",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "eslint --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-pdf/renderer": "^3.1.14",
+    "express": "^4.18.2",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.39",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "jest": "^30.4.2",
+    "lint-staged": "^17.0.4",
+    "nodemon": "^3.0.1",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
