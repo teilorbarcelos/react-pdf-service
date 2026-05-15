@@ -1,16 +1,19 @@
-.PHONY: up down clean build dev test test-api
+.PHONY: install infra-up infra-down infra-clean build dev test test-api
 
 # Default values
 APP_NAME=react-pdf-service
 PORT=8889
 
-up:
+install:
+	npm install
+
+infra-up:
 	docker compose up -d --build
 
-down:
+infra-down:
 	docker compose down
 
-clean:
+infra-clean:
 	docker compose down --rmi all --volumes --remove-orphans
 	rm -rf dist node_modules
 

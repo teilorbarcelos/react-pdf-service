@@ -1,4 +1,5 @@
 # PDF Service (Node.js/React-PDF)
+![CI](https://github.com/teilorbarcelos/react-pdf-service/actions/workflows/ci.yml/badge.svg)
 
 Microserviço genérico de geração de PDF utilizando React e `@react-pdf/renderer` para alta performance e layouts declarativos. Este serviço foi projetado para ser uma alternativa leve e tipada ao serviço de PDF baseado em Chromium.
 
