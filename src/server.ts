@@ -8,6 +8,10 @@ const engine = new PDFEngine();
 
 app.use(express.json());
 
+app.get('/health', (_req, res) => {
+  res.json({ status: 'UP' });
+});
+
 app.post('/v1/pdf/generate', async (req, res) => {
   console.log('Generating PDF request received');
   
